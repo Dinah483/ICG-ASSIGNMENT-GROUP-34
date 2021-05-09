@@ -1,0 +1,34 @@
+#must be changed due to better modules
+Financial_returns
+ calculate_returnsOnInvestment
+ calculate_revenue
+ calculate_grossprofit
+ calculate_netprofit
+End
+calculate_returnsOnInvestment
+ prompt investment
+ get investment
+ prompt investmentRate
+ get investmentRate
+ prompt nrOfYears
+ get nrOfYears
+ returnsOnInvestment = investment * interestRate * nrOfYears
+End
+calculate_revenue
+ prompt itemSellingPrice
+ get itemSellingPrice
+ prompt quantity
+ get quantity
+ revenue = itemSellingPrice * quantity
+ End
+ calculate_grossprofit
+ prompt costOfSales
+ get costOfSales
+ grossprofit = revenue - costOfSales
+ End
+ calculate_netprofit
+ prompt expenses
+ get expenses
+ netprofit = grossprofit - expenses
+ End
+#Not done will continue later
