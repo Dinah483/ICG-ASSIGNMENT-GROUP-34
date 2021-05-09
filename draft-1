@@ -18,5 +18,17 @@ calculate_revenue
  prompt itemSellingPrice
  get itemSellingPrice
  prompt quantity
- get 
+ get quantity
+ revenue = itemSellingPrice * quantity
+ End
+ calculate_grossprofit
+ prompt costOfSales
+ get costOfSales
+ grossprofit = revenue - costOfSales
+ End
+ calculate_netprofit
+ prompt expenses
+ get expenses
+ netprofit = grossprofit - expenses
+ End
 #Not done will continue later
