@@ -20,15 +20,19 @@ calculate_revenue
  prompt quantity
  get quantity
  revenue = itemSellingPrice * quantity
- End
- calculate_grossprofit
+End
+calculate_grossprofit
  prompt costOfSales
  get costOfSales
  grossprofit = revenue - costOfSales
- End
- calculate_netprofit
+End
+calculate_netprofit
  prompt expenses
  get expenses
  netprofit = grossprofit - expenses
- End
+ if (netprofit < 0) then
+  loss = netprofit * -1
+ endif
+End
+
 #Not done will continue later
