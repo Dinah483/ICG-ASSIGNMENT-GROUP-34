@@ -6,37 +6,42 @@ Start
   profit
   print_finances
 End
-calculate_returnsOnInvestment(investment,interestRate,nrOfYears)
+
+calculate_returnsOnInvestment(investment,interestRate,nrOfYears){
+  prompt investment
   get investment
   prompt interestRate
   get interestRate
   prompt nrOfYears
   get nrOfYears
-  interest = in
-investment * interestRate * nrOfYears
-  returnsOnInvestment(investment,interest)
-  returnsOnInvestment== investment + interest}
-calculate_revenue
+  returnsOnInvestment = investment * interestRate * nrOfYears
+  totalInvestment = investment + returnsOnInvestment
+}
+
+calculate_revenue(itemSellingPrice,quantity){
   prompt itemSellingPrice
   get itemSellingPrice
   prompt quantity
   get quantity
   revenue = itemSellingPrice * quantity
-End
-calculate_grossprofit
+}
+  
+calculate_grossprofit(costOfSales){
   prompt costOfSales
   get costOfSales
   grossprofit = revenue - costOfSales
-End
-calculate_netprofit
+}
+  
+calculate_netprofit(expenses){
   prompt expenses
   get expenses
   netprofit = grossprofit - expenses
   if (netprofit < 0) then
     loss = netprofit * -1
   Endif
-End
-print_finances
+}
+
+print_finances(totalInvestment,revenue,grossprofit,netprofit,loss){
   display returnsOnInvestment
   display revenue
   dsiplay grossprofit
@@ -45,5 +50,6 @@ print_finances
   else 
     display loss
   Endif
-End
+}
+
 
