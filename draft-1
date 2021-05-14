@@ -1,20 +1,20 @@
 #must be changed due to better modules
 Start
-  returnsOnInvestment
+  totalInvestment
   revenue
   grossprofit
   profit
   print_finances
 End
 
-calculate_returnsOnInvestment(investment,interestRate,nrOfYears){
+calculate_totalInvestment(investment,interestRate,nrOfYears){
   prompt investment
   get investment
   prompt interestRate
   get interestRate
   prompt nrOfYears
   get nrOfYears
-  returnsOnInvestment = investment * interestRate * nrOfYears
+  totalInvestment = investment * interestRate * nrOfYears
   totalInvestment = investment + returnsOnInvestment
 }
 
