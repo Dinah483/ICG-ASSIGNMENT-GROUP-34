@@ -1,15 +1,15 @@
 #must be changed due to better modules
-Financial_returns
+Start
   returnsOnInvestment
   revenue
   grossprofit
   profit
   print_finances
 End
-calculate_returnsOnInvestment
+calculate_returnsOnInvestment(investment,interestRate,nrOfYears)
   get investment
   prompt interestRate
-  get investmentRate
+  get interestRate
   prompt nrOfYears
   get nrOfYears
   interest = in
