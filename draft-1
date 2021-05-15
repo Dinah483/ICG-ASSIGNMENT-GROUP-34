@@ -14,7 +14,7 @@ calculate_totalInvestment(investment,interestRate,nrOfYears){
   get interestRate
   prompt nrOfYears
   get nrOfYears
-  totalInvestment = investment * interestRate * nrOfYears
+  returnsOnInvestment = investment * interestRate * nrOfYears
   totalInvestment = investment + returnsOnInvestment
 }
 
@@ -42,7 +42,7 @@ calculate_netprofit(expenses){
 }
 
 print_finances(totalInvestment,revenue,grossprofit,netprofit,loss){
-  display returnsOnInvestment
+  display totalInvestment
   display revenue
   dsiplay grossprofit
   if (netprofit > 0) then
