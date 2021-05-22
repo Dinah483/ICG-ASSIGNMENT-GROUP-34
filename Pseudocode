@@ -1,0 +1,49 @@
+#must be changed due to better modules
+Financial_returns
+  returnsOnInvestment
+  revenue
+  grossprofit
+  profit
+  print_finances
+End
+calculate_returnsOnInvestment
+  get investment
+  prompt interestRate
+  get investmentRate
+  prompt nrOfYears
+  get nrOfYears
+  interest = in
+investment * interestRate * nrOfYears
+  returnsOnInvestment(investment,interest)
+  returnsOnInvestment== investment + interest}
+calculate_revenue
+  prompt itemSellingPrice
+  get itemSellingPrice
+  prompt quantity
+  get quantity
+  revenue = itemSellingPrice * quantity
+End
+calculate_grossprofit
+  prompt costOfSales
+  get costOfSales
+  grossprofit = revenue - costOfSales
+End
+calculate_netprofit
+  prompt expenses
+  get expenses
+  netprofit = grossprofit - expenses
+  if (netprofit < 0) then
+    loss = netprofit * -1
+  Endif
+End
+print_finances
+  display returnsOnInvestment
+  display revenue
+  dsiplay grossprofit
+  if (netprofit > 0) then
+    display netprofit
+  else 
+    display loss
+  Endif
+End
+
