@@ -1,10 +1,10 @@
 #must be changed due to better modules
 Start
-  totalInvestment
-  revenue
-  grossprofit
-  profit
-  print_finances
+  calculate_totalInvestment()
+  calculate_revenue()
+  calculate_grossprofit()
+  determine_profit()
+  print_finances()
 End
 
 calculate_totalInvestment(investment,interestRate,nrOfYears){
@@ -26,13 +26,10 @@ calculate_revenue(itemSellingPrice,quantity){
   revenue = itemSellingPrice * quantity
 }
   
-calculate_grossprofit(costOfSales){
+determine_profit(costOfSales,expenses){
   prompt costOfSales
   get costOfSales
   grossprofit = revenue - costOfSales
-}
-  
-calculate_netprofit(expenses){
   prompt expenses
   get expenses
   netprofit = grossprofit - expenses
@@ -40,6 +37,8 @@ calculate_netprofit(expenses){
     loss = netprofit * -1
   Endif
 }
+  
+
 
 print_finances(totalInvestment,revenue,grossprofit,netprofit,loss){
   display totalInvestment
