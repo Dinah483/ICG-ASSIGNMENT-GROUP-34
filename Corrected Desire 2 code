@@ -1,0 +1,42 @@
+Landing Page Pseudocode
+signUp (Username, Password) {
+Prompt Username
+Get Username
+Display Username
+Prompt Password
+Display “Now you are signed up as” + Username
+}
+contactDetails (Phone Number, E-mail Address, Postal Address) {
+Prompt EmailAddress
+Prompt phoneNumber
+Prompt postalAddress
+}
+Identity (ID, Name, Surname, Age) {
+Prompt ID
+Get ID
+Prompt name
+Get name
+Prompt surname
+Get surname
+Prompt yearOfBirth
+Get yearOfBirth 
+Prompt currentYear
+Get currentYear
+age = currentYear + yearOfBirth
+If age <18 then
+Display “You do not qualify”
+Else
+Display “You are eligible”
+ENDIF
+Display “next page”
+
+JobQualifications(Certifications, previousEmployment ,yearsOfWorkExp){
+Prompt Certifications
+Prompt previousEmployment 
+Prompt yearsOfWorkExp
+Get yearsOfWorkExp
+If yearsOfWorkExp < 1 then
+Display “You are not qualified”
+Else
+Display “You maybe qualified”
+}
