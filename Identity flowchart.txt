@@ -1,0 +1,21 @@
+Identity (ID number, Name, Surname, Age) {
+
+START
+Prompt ID number
+Get ID number
+Prompt name
+Get name
+Prompt surname
+Get surname
+Get year of birth
+Get current year
+Calculate Age = current year + year of birth
+If age <18
+Then
+Display “You do not qualify”
+Else
+If age >18
+Then
+Display “You are eligible”
+Prompt “next page”
+ENDIF

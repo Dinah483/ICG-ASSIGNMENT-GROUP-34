@@ -1,0 +1,16 @@
+START
+(Username, Password, Email_Address){
+Prompt  Username
+Get Username
+Is Username Available?
+If availability=no 
+Then
+Display “This username is currently unavailable. Try again” 
+Repeat
+Input Username
+Else	
+Input Email_Address
+Input Password
+Prompt ‘Sign-up’
+}
+ENDIF

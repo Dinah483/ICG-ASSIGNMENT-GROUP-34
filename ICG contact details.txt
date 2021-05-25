@@ -1,0 +1,17 @@
+Contact Details (Phone Number, E-mail Address, Postal Address) {
+
+START
+Prompt E-mail Address
+Does E-mail address exist
+If existence = no
+Then
+Display “The E-mail address you have entered cannot be found”
+Repeat
+Input E-mail Address
+Else
+Prompt phone number
+Get phone number
+Prompt postal Address
+Get postal address
+Prompt “next page”
+ENDIF
