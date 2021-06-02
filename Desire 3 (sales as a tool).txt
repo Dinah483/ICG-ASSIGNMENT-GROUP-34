@@ -1,0 +1,42 @@
+Start
+customerInfo()
+itemProcess()
+print()
+End
+
+customerInfo(customerID, customrPassword, customerUsername){
+Prompt customerID
+Get customerID
+Prompt customerUsername
+Get customerUsername
+Prompt customrPassword
+Get customrPassword
+if (customrPassword(customerID) != customerID) then
+   DOWHILE customrPassword(customerID) != customerID
+   display "Entered password does not match ID , please enter correct password"
+   prompt customrPassword
+   Get customrPassword
+   ENDDO   
+else   
+   display "Welcome"+customerUsername+" what would you like to purchase"
+}
+
+itemProcess(itemChoice,quantity,tax){
+tax = 15/100
+prompt itemChoice
+Get itemChoice
+prompt quantity
+Get quantity
+price = itemPrice(itemChoice)
+fullPrice = itemPrice*quantity
+totalPrice = fullPrice + (fullPrice * tax)
+}
+
+printReceipt(customerUsername ,quantity,itemChoice,totalPrice,tax){
+display customerUsername
+display quantity
+display itemChoice
+display itemChoice
+display totalPrice
+display tax
+}
